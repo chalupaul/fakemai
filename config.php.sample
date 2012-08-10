@@ -24,6 +24,8 @@ $sHiddenFilesDir = '../files';
 /**
  * SITE OPTIONS
  * These are some general site options to be used mainly for http errors.
+ * The Base URL should *NOT* point to the same directory as this app or
+ * you will have infinite loops.
  */
 
 $sSiteBaseURL = 'http://mydomain.com/';
