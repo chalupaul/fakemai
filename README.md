@@ -7,7 +7,7 @@ Installation
 ============
 
 1. Make sure you have .htaccess files working in apache.
-2. putEdit the config file, and move it to config.php.
+2. Edit the config file, and move it to config.php.
 3. Put your files into the directory specified in the config file.
 4. That should do it! the genurl.php file will gen you some test urls.
 
