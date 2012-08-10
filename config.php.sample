@@ -20,4 +20,11 @@ $sExtract = $_SERVER['REMOTE_ADDR'];
 
 $sDownloadMimeType = 'application/x-iso9660-image';
 $sHiddenFilesDir = '../files';
+
+/**
+ * SITE OPTIONS
+ * These are some general site options to be used mainly for http errors.
+ */
+
+$sSiteBaseURL = 'http://mydomain.com/';
 ?>

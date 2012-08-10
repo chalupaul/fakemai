@@ -12,6 +12,6 @@ if ($sPassedTokenTime >= time() && $sPassedTokenClient == $sRebuiltTokenClient) 
    $sDownloadFile = basename($aCutURI['path']);
    serve_file_resumable("$sHiddenFilesDir/$sDownloadFile", $sDownloadMimeType);
 } else {
-  header("HTTP/1.1 400 Bad Request.");
+  header("HTTP/1.1 410 Gone.");
 }
 ?>
