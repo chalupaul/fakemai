@@ -1,7 +1,7 @@
 fakemai
 =======
 
-Fakemai is a php based emulator for Akamai's temporary directory stuff. If you are ever stuck needing to deploy some code and Akamai can't meet your delivery dates because the cache is going to take too long to change or you're doing o new deployment, use this until they are ready and swap out the CNAME records.
+Fakemai is a php based emulator for Akamai's temporary directory stuff. If you are ever stuck needing to deploy some code and Akamai can't meet your delivery dates because the cache is going to take too long to change or you're doing a new deployment, use this until they are ready and swap out the CNAME records.
 
 Installation
 ============
