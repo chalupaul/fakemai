@@ -1,0 +1,22 @@
+<?php
+/**  
+ * LINK GENERATION OPTIONS
+ * Change these to your settings (the ones you gave akamai). 
+ * You should not have to change $sExtract unless they tell you to.
+ */ 
+
+$sURL = '/image.iso';
+$sParam = 'token';
+$nWindow = 86400;
+$sSalt = "random_characters";
+$sExtract = $_SERVER['REMOTE_ADDR'];
+
+/**
+ * DOWNLOAD OPTIONS
+ * These header variables should mimic what you want to the server 
+ * to show download. The directory set is where the hidden files are
+ * proxied from. Tip: Pros put that directory outside their web root.
+ */ 
+$sDownloadMimeType = 'application/x-iso9660-image';
+$sHiddenFilesDir = '../files';
+?>
