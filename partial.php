@@ -1,5 +1,9 @@
 <?
-
+/**
+ * serve_file_resumable()
+ * This is a wrapper to let php support the range header for resumes
+ * and partial uploads.
+ */
 function serve_file_resumable ($sFile, $sContentType = 'application/octet-stream') {
 
     // Avoid sending unexpected errors to the client - we should be serving a file,
