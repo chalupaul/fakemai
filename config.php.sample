@@ -29,4 +29,5 @@ $sHiddenFilesDir = '../files';
  */
 
 $sSiteBaseURL = 'http://mydomain.com/';
+$sSiteErrorURL = 'http://mydomain.com/404.html';
 ?>

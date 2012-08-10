@@ -31,13 +31,13 @@ function serve_file_resumable ($sFile, $sContentType = 'application/octet-stream
       $bPartial = true;
       list($param,$mRange) = explode('=',$mRange);
       if (strtolower(trim($param)) != 'bytes') { // Bad request - range unit is not 'bytes'
-        header("HTTP/1.1 400 Invalid Request");
+        header("Location: $sSiteErrorURL");
         exit;
       }
       $mRange = explode(',',$mRange);
       $mRange = explode('-',$mRange[0]); // We only deal with the first requested range
       if (count($mRange) != 2) { // Bad request - 'bytes' parameter is not valid
-        header("HTTP/1.1 400 Invalid Request");
+        header("Location: $sSiteErrorURL");
         exit;
       }
       if ($mRange[0] === '') { // First number missing, return last $mRange[1] bytes
